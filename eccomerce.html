@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-1173a7bb9742e987ab2",applicationID:"765085969"};;(()=>{var e,t,r={8768:(e,t,r)=>{"use strict";r.d(t,{T:()=>n,p:()=>i});const n=/(iPad|iPhone|iPod)/g.test(navigator.userAgent),i=n&&Boolean("undefined"==typeof SharedWorker)},6562:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>p,C5:()=>d,DL:()=>w,OP:()=>R,lF:()=>z,Yu:()=>A,Dg:()=>h,CX:()=>f,GE:()=>y,sU:()=>M});var n={};r.r(n),r.d(n,{agent:()=>x,match:()=>k,version:()=>j});var i=r(6797),o=r(909),a=r(8610);class s{constructor(e,t){try{if(!e||"object"!=typeof e)return(0,a.Z)("New setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,a.Z)("Setting a Configurable requires a model to set its initial properties");Object.assign(this,t),Object.entries(e).forEach((e=>{let[t,r]=e;const n=(0,o.q)(t);n.length&&r&&"object"==typeof r&&n.forEach((e=>{e in r&&((0,a.Z)('"'.concat(e,'" is a protected attribute and can not be changed in feature ').concat(t,".  It will have no effect.")),delete r[e])})),this[t]=r}))}catch(e){(0,a.Z)("An error occured while setting a Configurable",e)}}}const c={beacon:i.ce.beacon,errorBeacon:i.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},u={};function d(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!u[e])throw new Error("Info for ".concat(e," was never set"));return u[e]}function f(e,t){if(!e)throw new Error("All info objects require an agent identifier!");u[e]=new s(t,c),(0,i.Qy)(e,u[e],"info")}const l={allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},spa:{enabled:!0,harvestTimeSeconds:10}},g={};function v(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!g[e])throw new Error("Configuration for ".concat(e," was never set"));return g[e]}function h(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");g[e]=new s(t,l),(0,i.Qy)(e,g[e],"config")}function p(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const m={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},b={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!b[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return b[e]}function y(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");b[e]=new s(t,m),(0,i.Qy)(e,b[e],"loader_config")}const A=(0,i.mF)().o;var x=null,j=null;const _=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var E=navigator.userAgent,D=E.match(_);D&&-1===E.indexOf("Chrome")&&-1===E.indexOf("Chromium")&&(x="Safari",j=D[1])}function k(e,t){if(!x)return!1;if(e!==x)return!1;if(!t)return!0;if(!j)return!1;for(var r=j.split("."),n=t.split("."),i=0;i<n.length;i++)if(n[i]!==r[i])return!1;return!0}var S=r(5526),P=r(2374);const T="NRBA_SESSION_ID";function N(){if(!P.il)return null;try{let e;return null===(e=window.sessionStorage.getItem(T))&&(e=(0,S.ky)(16),window.sessionStorage.setItem(T,e)),e}catch(e){return null}}var O=r(8226);const I=e=>({buildEnv:O.Re,customTransaction:void 0,disabled:!1,distMethod:O.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(P._A?.performance?.timeOrigin||P._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+P._A.location,ptid:void 0,releaseIds:{},sessionId:1==p(e,"privacy.cookies_enabled")?N():null,xhrWrappable:"function"==typeof P._A.XMLHttpRequest?.prototype?.addEventListener,userAgent:n,version:O.q4}),C={};function R(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!C[e])throw new Error("Runtime for ".concat(e," was never set"));return C[e]}function M(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");C[e]=new s(t,I(e)),(0,i.Qy)(e,C[e],"runtime")}function z(e){return function(e){try{const t=d(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},8226:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.229.0",i="PROD",o="CDN"},9557:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(8610);const i={agentIdentifier:""};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},4329:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(3752),i=r(7022),o=r(4045),a=r(2325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=Array.from(s[e]);function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)f(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((e=>{let[t]=e;a(t)})))}function f(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},3752:(e,t,r)=>{"use strict";r.d(t,{ee:()=>u});var n=r(6797),i=r(3916),o=r(7022),a=r(6562),s="nr@context";let c=(0,n.fP)();var u;function d(){}function f(){return new d}function l(){u.aborted=!0,u.backlog={}}c.ee?u=c.ee:(u=function e(t,r){var n={},c={},g={},v=!1;try{v=16===r.length&&(0,a.OP)(r).isolatedBacklog}catch(e){}var h={on:b,addEventListener:b,removeEventListener:w,emit:m,get:A,listeners:y,context:p,buffer:x,abort:l,aborted:!1,isBuffering:j,debugId:r,backlog:v?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof d?e:e?(0,i.X)(e,s,f):f()}function m(e,r,n,i,o){if(!1!==o&&(o=!0),!u.aborted||i){t&&o&&t.emit(e,r,n);for(var a=p(n),s=y(e),d=s.length,f=0;f<d;f++)s[f].apply(a,r);var l=_()[c[e]];return l&&l.push([h,e,r,a]),a}}function b(e,t){n[e]=y(e).concat(t)}function w(e,t){var r=n[e];if(r)for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)}function y(e){return n[e]||[]}function A(t){return g[t]=g[t]||e(h,t)}function x(e,t){var r=_();h.aborted||(0,o.D)(e,(function(e,n){t=t||"feature",c[n]=t,t in r||(r[t]=[])}))}function j(e){return!!_()[c[e]]}function _(){return h.backlog}}(void 0,"globalEE"),c.ee=u)},9252:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(3752).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4045:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(9252);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},8544:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(2374);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];window.addEventListener(e,t,a(r))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];document.addEventListener(e,t,a(r))}},5526:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>i,ky:()=>o});var n=r(2374);function i(){var e=null,t=0,r=n._A?.crypto||n._A?.msCrypto;function i(){return e?15&e[t++]:16*Math.random()|0}r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,a="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",s="",c=0;c<a.length;c++)s+="x"===(o=a[c])?i().toString(16):"y"===o?(o=3&i()|8).toString(16):o;return s}function o(e){var t=null,r=0,n=self.crypto||self.msCrypto;n&&n.getRandomValues&&Uint8Array&&(t=n.getRandomValues(new Uint8Array(31)));for(var i=[],o=0;o<e;o++)i.push(a().toString(16));return i.join("");function a(){return t?15&t[r++]:16*Math.random()|0}}},2053:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},8610:(e,t,r)=>{"use strict";function n(e,t){console&&console.warn&&"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},3916:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},2374:(e,t,r)=>{"use strict";r.d(t,{_A:()=>o,il:()=>n,lW:()=>a,v6:()=>i});const n=Boolean("undefined"!=typeof window&&window.document),i=Boolean("undefined"!=typeof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator);let o=(()=>{if(n)return window;if(i){if("undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope)return globalThis;if(self instanceof WorkerGlobalScope)return self}throw new Error('New Relic browser agent shutting down due to error: Unable to locate global scope. This is possibly due to code redefining browser global variables like "self" and "window".')})();function a(){return o}},7022:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t){var r=[],i="",o=0;for(i in e)n.call(e,i)&&(r[o]=t(i,e[i]),o+=1);return r}},2438:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(3752);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},2650:(e,t,r)=>{"use strict";r.d(t,{K:()=>a,b:()=>o});var n=r(8544);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},6797:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>u,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>d,mF:()=>s});var n=r(2053),i=r(2374);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,r){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,n.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[r]:t}},i}function u(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},6998:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(8544);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];return void(0,n.iz)("visibilitychange",(function(){if(t){if("hidden"!=document.visibilityState)return;e()}e(document.visibilityState)}))}},6034:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(2325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},2484:(e,t,r)=>{"use strict";r.d(t,{Dz:()=>i,OJ:()=>a,qw:()=>o,t9:()=>n});const n=r(2325).D.pageViewEvent,i="firstbyte",o="domcontent",a="windowload"},6382:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageViewTiming},1509:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6562),i=r(3752),o=r(5432),a=r(6797);class s{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,n.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=r,this.blocked=!1,this.checkConfiguration()}checkConfiguration(){if(!(0,n.lF)(this.agentIdentifier)){let e={...(0,a.gG)().info?.jsAttributes};try{e={...e,...(0,n.C5)(this.agentIdentifier)?.jsAttributes}}catch(e){}(0,o.j)(this.agentIdentifier,{...(0,a.gG)(),info:{...(0,a.gG)().info,jsAttributes:e}})}}}},5432:(e,t,r)=>{"use strict";r.d(t,{j:()=>y});var n=r(8683),i=r.n(n),o=r(2325),a=r(6562),s=r(9252),c=r(7022),u=r(3752),d=r(2053),f=r(4329),l=r(2650),g=r(2374),v=r(8610),h=r(6034);var p=r(6797);const m={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa]};const b={};function w(){const e=(0,p.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?returnsVals:o[0]}(t,...n)}}))}function y(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:A,info:x,loader_config:j,runtime:_={loaderType:n},exposed:E=!0}=t;const D=(0,p.gG)();x||(A=D.init,x=D.info,j=D.loader_config),g.v6&&(x.jsAttributes={...x.jsAttributes,isWorker:!0}),(0,a.CX)(e,x),(0,a.Dg)(e,A||{}),(0,a.GE)(e,j||{}),(0,a.sU)(e,_),w();const k=function(e,t){t||(0,f.R)(e,"api");const n={};var p=u.ee.get(e),m=p.get("tracer"),b="api-",w=b+"ixn-";function y(){}(0,c.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(e,t){n[t]=x(b,t,!0,"api")})),n.addPageAction=x(b,"addPageAction",!0,o.D.pageAction),n.setCurrentRouteName=x(b,"routeName",!0,o.D.spa),n.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,a.OP)(e).customTransaction=(r||"http://custom.transaction")+t,x(b,"setPageViewName",!0,"api")()},n.setCustomAttribute=function(t,r){const n=(0,a.C5)(e);return(0,a.CX)(e,{...n,jsAttributes:{...n.jsAttributes,[t]:r}}),x(b,"setCustomAttribute",!0,"api")()},n.interaction=function(){return(new y).get()};var A=y.prototype={createTracer:function(e,t){var r={},n=this,i="function"==typeof t;return(0,s.p)(w+"tracer",[(0,d.z)(),e,r],n,o.D.spa,p),function(){if(m.emit((i?"":"no-")+"fn-start",[(0,d.z)(),n,i],r),i)try{return t.apply(this,arguments)}catch(e){throw m.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],r),e}finally{m.emit("fn-end",[(0,d.z)()],r)}}}};function x(e,t,r,n){return function(){return(0,s.p)(h.xS,["API/"+t+"/called"],void 0,o.D.metrics,p),(0,s.p)(e+t,[(0,d.z)()].concat(i()(arguments)),r?null:this,n,p),r?void 0:this}}function j(){r.e(439).then(r.bind(r,5692)).then((t=>{let{setAPI:r}=t;r(e),(0,f.L)(e,"api")})).catch((()=>(0,v.Z)("Downloading runtime APIs failed...")))}return(0,c.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(e,t){A[t]=x(w,t,void 0,o.D.spa)})),n.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,s.p)(h.xS,["API/noticeError/called"],void 0,o.D.metrics,p),(0,s.p)("err",[e,(0,d.z)(),!1,t],void 0,o.D.jserrors,p)},g.v6?j():(0,l.b)((()=>j()),!0),n}(e,y);return(0,p.Qy)(e,k,"api"),(0,p.Qy)(e,E,"exposed"),(0,p.EZ)("activatedFeatures",b),(0,p.EZ)("setToken",(t=>function(e,t){var r=u.ee.get(t);e&&"object"==typeof e&&((0,c.D)(e,(function(e,t){if(!t)return(m[e]||[]).forEach((t=>{(0,s.p)("block-"+e,[],void 0,t,r)}));b[e]||((0,s.p)("feat-"+e,[],void 0,m[e],r),b[e]=!0)})),(0,f.L)(t,o.D.pageViewEvent))}(t,e))),k}},909:(e,t,r)=>{"use strict";r.d(t,{Z:()=>i,q:()=>o});var n=r(2325);function i(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}function o(e){return e===n.D.jserrors?[]:["auto"]}},2325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8}},8683:e=>{e.exports=function(e,t,r){t||(t=0),void 0===r&&(r=e?e.length:0);for(var n=-1,i=r-t||0,o=Array(i<0?0:i);++n<i;)o[n]=e[t+n];return o}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return i.d(t,{a:t}),t},i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>(({78:"page_action-aggregate",147:"metrics-aggregate",193:"session_trace-aggregate",317:"jserrors-aggregate",348:"page_view_timing-aggregate",439:"async-api",729:"lazy-loader",786:"page_view_event-aggregate",873:"spa-aggregate",898:"ajax-aggregate"}[e]||e)+"."+{78:"8658345c",147:"fde0a6c6",193:"afe7d95b",317:"265ba41e",348:"92e7c907",439:"71768fc8",729:"ff971c03",786:"a968183b",862:"5040a0e9",873:"6a952689",898:"ebcbd305"}[e]+"-1.229.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var f=u[d];if(f.getAttribute("src")==r||f.getAttribute("data-webpack")==t+o){s=f;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r),e[r]=[n];var l=(t,n)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},g=setTimeout(l.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=l.bind(null,s.onerror),s.onload=l.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={521:0,38:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=window.webpackChunkNRBA=window.webpackChunkNRBA||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})();var o={};(()=>{"use strict";i.r(o);var e=i(2325),t=i(6562);const r=Object.values(e.D);function n(e){const n={};return r.forEach((r=>{n[r]=function(e,r){return!1!==(0,t.Mt)(r,"".concat(e,".enabled"))}(r,e)})),n}var a=i(5432),s=i(909),c=i(9252),u=i(8768),d=i(4329),f=i(1509),l=i(2650),g=i(2374),v=i(8610);class h extends f.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.hasAggregator=!1,this.auto=n,this.abortHandler,n&&(0,d.R)(e,r)}importAggregator(){if(this.hasAggregator||!this.auto)return;this.hasAggregator=!0;const e=async()=>{try{const{lazyLoader:e}=await i.e(729).then(i.bind(i,8110)),{Aggregate:t}=await e(this.featureName,"aggregate");new t(this.agentIdentifier,this.aggregator)}catch(e){(0,v.Z)("Downloading ".concat(this.featureName," failed...")),this.abortHandler?.()}};g.v6?e():(0,l.b)((()=>e()),!0)}}var p,m,b,w=i(2484),y=i(2053);class A extends h{constructor(r,n){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(r,n,w.t9,i),("undefined"==typeof PerformanceNavigationTiming||u.T)&&"undefined"!=typeof PerformanceTiming){const n=(0,t.OP)(r);n[w.Dz]=Math.max(Date.now()-n.offset,0),(0,l.K)((()=>n[w.qw]=Math.max((0,y.z)()-n[w.Dz],0))),(0,l.b)((()=>{const t=(0,y.z)();n[w.OJ]=Math.max(t-n[w.Dz],0),(0,c.p)("timing",["load",t],void 0,e.D.pageViewTiming,this.ee)}))}this.importAggregator()}}p=A,m="featureName",b=w.t9,(m=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(m))in p?Object.defineProperty(p,m,{value:b,enumerable:!0,configurable:!0,writable:!0}):p[m]=b;var x=i(9557),j=i(7022);class _ extends x.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,j.D)(e,(function(e,r){t[e]=E(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,j.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=E(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=D(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=E(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=k(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function E(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=D(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function D(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function k(e){return"object"!=typeof e?[]:(0,j.D)(e,S)}function S(e,t){return t}var P=i(6797),T=i(5526),N=i(2438);var O=i(6998),I=i(8544),C=i(6382);class R extends h{constructor(e,r){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,r,C.t,n),g.il&&((0,t.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,O.N)((()=>(0,c.p)("docHidden",[(0,y.z)()],void 0,C.t,this.ee)),!0),(0,I.bP)("pagehide",(()=>(0,c.p)("winPagehide",[(0,y.z)()],void 0,C.t,this.ee))),this.importAggregator())}}!function(e,t,r){(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(R,"featureName",C.t);const M=Boolean(g._A?.Worker),z=Boolean(g._A?.SharedWorker),B=Boolean(g._A?.navigator?.serviceWorker);let q,W,V;var L=i(6034);class Z extends h{constructor(t,r){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(t,r,L.t9,n),function(e){if(!q){if(M){q=Worker;try{g._A.Worker=r(q,"Dedicated")}catch(e){o(e,"Dedicated")}if(z){W=SharedWorker;try{g._A.SharedWorker=r(W,"Shared")}catch(e){o(e,"Shared")}}else n("Shared");if(B){V=navigator.serviceWorker.register;try{g._A.navigator.serviceWorker.register=(t=V,function(){for(var e=arguments.length,r=new Array(e),n=0;n<e;n++)r[n]=arguments[n];return i("Service",r[1]?.type),t.apply(navigator.serviceWorker,r)})}catch(e){o(e,"Service")}}else n("Service");var t;return}n("All")}function r(e,t){return"undefined"==typeof Proxy?e:new Proxy(e,{construct:(e,r)=>(i(t,r[1]?.type),new e(...r))})}function n(t){g.v6||e("Workers/".concat(t,"/Unavailable"))}function i(t,r){e("Workers/".concat(t,"module"===r?"/Module":"/Classic"))}function o(t,r){e("Workers/".concat(r,"/SM/Unsupported")),(0,v.Z)("NR Agent: Unable to capture ".concat(r," workers."),t)}}((t=>(0,c.p)(L.xS,[t],void 0,e.D.metrics,this.ee))),this.importAggregator()}}!function(e,t,r){(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(Z,"featureName",L.t9),new class{constructor(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,T.ky)(16);this.agentIdentifier=t,this.sharedAggregator=new _({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(A),Object.assign(this,(0,a.j)(this.agentIdentifier,e,e.loaderType||"agent")),this.start()}get config(){return{info:(0,t.C5)(this.agentIdentifier),init:(0,t.P_)(this.agentIdentifier),loader_config:(0,t.DL)(this.agentIdentifier),runtime:(0,t.OP)(this.agentIdentifier)}}start(){const t="features";try{const r=n(this.agentIdentifier),i=Array.from(this.desiredFeatures);i.sort(((t,r)=>e.p[t.featureName]-e.p[r.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===e.D.pageViewEvent){const e=(0,s.Z)(t.featureName);e.every((e=>r[e]))||(0,v.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,N.P)(e),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,P.Qy)(this.agentIdentifier,this.features,t)}catch(e){(0,v.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",e);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,P.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[A,R,Z],loaderType:"lite"})})(),window.NRBA=o})();</script>
+
+<link rel="preload" href="https://cdn.yampi.io/rocket/css/global.css?id=9e18d6cca0aa79fd66cf" as="style" />
+<link rel="preload" href="https://cdn.yampi.io/rocket/css/themes/rocket.css?id=56c5d646b66499d8a16e" as="style" />
+
+<link rel="preconnect" crossorigin href="https://cdn.yampi.io">
+<link rel="preconnect" crossorigin href="https://api.dooki.com.br">
+<link rel="preconnect" crossorigin href="https://api.yampi.io">
+<link rel="preconnect" crossorigin href="https://images.yampi.io">
+<link rel="preconnect" crossorigin href="https://images.yampi.me">
+<link rel="preconnect" crossorigin href="https://fonts.gstatic.com">
+<link rel="preconnect" crossorigin href="https://fonts.googleapis.com">
+<link rel="preconnect" crossorigin href="//bam.nr-data.net">
+<link rel="preconnect" crossorigin href="//www.facebook.com">
+
+<link href="//king-assets.yampi.me" rel="dns-prefetch" />
+<link href="//awesome-assets.yampi.me" rel="dns-prefetch" />
+<link href="//api.mercadopago.com" rel="dns-prefetch" />
+<link href="//www.mercadopago.com" rel="dns-prefetch" />
+<link href="//www.google-analytics.com" rel="dns-prefetch" />
+<link href="//www.googleadservices.com" rel="dns-prefetch" />
+<link href="//googleads.g.doubleclick.net" rel="dns-prefetch" />
+<link href="//bat.bing.com" rel="dns-prefetch" />
+<link href="//connect.facebook.net" rel="dns-prefetch" />
+<link href="//staticxx.facebook.com" rel="dns-prefetch" />
+<link href="//static.xx.fbcdn.net" rel="dns-prefetch" />
+<link href="//s3.amazonaws.com" rel="dns-prefetch" />
+<link href="//manager.smartlook.com" rel="dns-prefetch" />
+<link href="//vars.hotjar.com" rel="dns-prefetch" />
+<link href="//dis.us.criteo.com" rel="dns-prefetch" />
+<link href="https://bam.nr-data.net" rel="dns-prefetch" />
+<link href="https://stats.g.doubleclick.net" rel="dns-prefetch" />
+<link href="https://connect.facebook.net" rel="dns-prefetch" />
+
+<link rel="preload" as="image" href="https://images.yampi.me/assets/stores/pajoli/uploads/logo/642893c9d1593.png"/>
+
+
+<link rel="preload" as="image" href="//images.yampi.me/assets/stores/pajoli/uploads/banners/642a0382d529f.png" media="(min-width: 701px)"/>
+        <!-- Minimal -->
+<link rel='icon' type='image/png' href='https://king-assets.yampi.me/dooki/642892b759556/642892b75955c.png'>
+<link rel='icon' sizes='192x192' href='https://king-assets.yampi.me/dooki/642892b759556/642892b75955c.png'>
+<link rel='apple-touch-icon' href='https://king-assets.yampi.me/dooki/642892b759556/642892b75955c.png'>
+<meta name='msapplication-square310x310logo' content='https://king-assets.yampi.me/dooki/642892b759556/642892b75955c.png'>
+
+<!-- Apple -->
+<link rel='apple-touch-icon' href='https://king-assets.yampi.me/dooki/642892b759556/642892b75955c.png'>
+<link rel='apple-touch-icon' sizes='76x76' href='https://king-assets.yampi.me/dooki/642892b759556/642892b75955c.png'>
+<link rel='apple-touch-icon' sizes='120x120' href='https://king-assets.yampi.me/dooki/642892b759556/642892b75955c.png'>
+<link rel='apple-touch-icon' sizes='152x152' href='https://king-assets.yampi.me/dooki/642892b759556/642892b75955c.png'>
+
+<link rel="manifest" href="/manifest.json" />
+
+<script defer src="https://cdn.yampi.io/rocket/js/manifest.js?id=2c03ed3dd3f7912afecb"></script>
+<script defer src="https://cdn.yampi.io/rocket/js/vendor.js?id=4e075f458288dcb16c24"></script>
+<script defer src="https://cdn.yampi.io/rocket/js/app.js?id=51a604767af92338d60e"></script>
+
+<!-- robots -->
+<meta name="robots" content="index,follow" />
+
+<!-- meta tags -->
+
+<title>PAJOLI</title>
+<meta name="description" content="PAJOLI">
+<meta property="og:title" content="PAJOLI" />
+<meta property="og:description" content="PAJOLI" />
+
+<meta name="twitter:title" content="PAJOLI" />
+<meta name="twitter:description" content="PAJOLI" />
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebPage","name":"PAJOLI","description":"PAJOLI"}</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&amp;display=swap" rel="stylesheet" media="screen" async>
+
+<script>
+    window.merchant = {"id":563626,"alias":"pajoli","domain":"pajoli.club","base_url":"https:\/\/www.pajoli.club","logo_url":"https:\/\/images.yampi.me\/assets\/stores\/pajoli\/uploads\/logo\/642893c9d1593.png","has_mp":true,"theme":{"id":1,"alias":"rocket"},"theme_id":1,"api":{"search":"https:\/\/api.dooki.com.br\/v2\/pajoli\/public\/search"},"checkout":{"base_domain":"https:\/\/seguro.pajoli.club","skip_cart":false,"items":"https:\/\/seguro.pajoli.club\/cart\/items?store_token=5WFoQv5cIDKRJeYKwl9q9TOQCUF55j4feY48xAYt","items_json":"https:\/\/seguro.pajoli.club\/cart\/json?store_token=5WFoQv5cIDKRJeYKwl9q9TOQCUF55j4feY48xAYt","redirect_to":"https:\/\/seguro.pajoli.club\/cart?store_token=5WFoQv5cIDKRJeYKwl9q9TOQCUF55j4feY48xAYt","orders":"https:\/\/seguro.pajoli.club\/account\/sales","store_token":"5WFoQv5cIDKRJeYKwl9q9TOQCUF55j4feY48xAYt","default_card":"amex"},"manifest":{"name":"PAJOLI","short_name":"PAJOLI","start_url":"https:\/\/www.pajoli.club?utm_source=web_app_manifest","description":"PAJOLI","lang":"pt-BR"},"meta":{"title":"PAJOLI","description":"PAJOLI","icons":{"default":"https:\/\/king-assets.yampi.me\/dooki\/642892b759556\/642892b75955c.png"}},"company":{"person_type":"personal","cnpj":"","razao_social":null,"name":"Luan Felipe","cpf":"11351517414","phone":{"code":"81","formated_number":"(81) 99171-4737","number":"81991714737"},"whatsapp":{"formated_number":"(81) 99171-4737","number":"81991714737","url":"https:\/\/web.whatsapp.com\/send?phone=5581991714737"},"email":"usepajoli@outlook.com","address":{"street":"Rua Real da Torre","number":"159","complement":null,"neighborhood":"Madalena","city":"Recife","state":"PE","zipcode":"50680-000","full_address":"Rua Real da Torre, 159 - Madalena"},"social":{"facebook_url":null,"instagram_url":"https:\/\/www.instagram.com\/usepajoli\/","youtube_url":null,"pinterest_url":null,"tiktok_url":null,"twitter_url":null}},"shipping":[],"pricing":{"first_order":{"min_order":null,"code":null,"value":null,"type_increment_value":null}},"payments":[{"active":true,"alias":"amex","name":"American Express","icon_url":"https:\/\/icons.yampi.me\/svg\/card-amex.svg","percent_discount":"0.00"},{"active":true,"alias":"visa","name":"Visa","icon_url":"https:\/\/icons.yampi.me\/svg\/card-visa.svg","percent_discount":"0.00"},{"active":true,"alias":"diners","name":"Diners","icon_url":"https:\/\/icons.yampi.me\/svg\/card-diners.svg","percent_discount":"0.00"},{"active":true,"alias":"mastercard","name":"Mastercard","icon_url":"https:\/\/icons.yampi.me\/svg\/card-mastercard.svg","percent_discount":"0.00"},{"active":true,"alias":"discover","name":"Discover","icon_url":"https:\/\/icons.yampi.me\/svg\/card-discover.svg","percent_discount":"0.00"},{"active":true,"alias":"aura","name":"Aura","icon_url":"https:\/\/icons.yampi.me\/svg\/card-aura.svg","percent_discount":"0.00"},{"active":true,"alias":"hipercard","name":"Hipercard","icon_url":"https:\/\/icons.yampi.me\/svg\/card-hipercard.svg","percent_discount":"0.00"},{"active":true,"alias":"elo","name":"Elo","icon_url":"https:\/\/icons.yampi.me\/svg\/card-elo.svg","percent_discount":"0.00"},{"active":true,"alias":"billet","name":"Boleto Banc\u00e1rio","icon_url":"https:\/\/icons.yampi.me\/svg\/card-billet.svg","percent_discount":"0.00"},{"active":true,"alias":"hiper","name":"Hiper","icon_url":"https:\/\/icons.yampi.me\/svg\/card-hiper.svg","percent_discount":"0.00"},{"active":true,"alias":"pix","name":"Pix","icon_url":"https:\/\/icons.yampi.me\/svg\/card-pix.svg","percent_discount":"0.00"}],"promotion":[],"pages":[],"cookies_policy":[],"meta_tags":[]};
+    window.themeConfig = {"page":"home","theme":{"alias":"rocket","params":{"color_general_primary":"#111111","color_general_secundary":"#C48571","color_btn_primary_background":"#111111","color_btn_primary_text":"#FFFFFF","color_btn_secundary_background":"#DDA3A3","color_btn_secundary_text":"#FFFFFF","color_tag_background":"#F3F3F3","color_tag_text":"#000000","fonts_texts_family":"Montserrat","fonts_texts_size":15,"fonts_titles_family":"Montserrat","fonts_titles_weight":"regular","fonts_titles_uppercase":true,"fonts_buttons_uppercase":true,"buttons_general_format":"rounded","buttons_btn_primary_style":"solid","buttons_btn_secundary_style":"solid","grids_label_format":"rounded","grids_text_align":"left","grids_brand_enabled":0,"show_max_installment":0,"custom_css":"0","show_add_to_cart_button":true,"show_review_average":true,"cart_type":"side_cart","show_cart_savings":0,"show_product_cart_savings":0,"show_dark_mode":0,"empty_cart_helper_text":"Navegue pela loja e adicione produtos.","empty_cart_text_button":"Iniciar compra","empty_cart_link_button":"0"}},"sections":[{"section_alias":"header","position":0,"order":0,"visible":true,"params":{"background_color":"#000000","text_color":"#FFFFFF","show_categories":true,"search_enabled":true,"topbar_enabled":true,"topbar_show_whatsapp":true,"topbar_show_phone":true,"topbar_tracking_url":"https:\/\/get.rastreio.net\/","highlightbar_enabled":true,"highlightbar_only_home":false,"highlightbar_text":null,"highlightbar_link":null,"highlightbar_background":"#EFDFD7","highlightbar_text_color":"#111111","fixed_header":true,"promotions_text_color":"#000000","header_layout":"left"}},{"section_alias":"main_banner","position":1,"order":1,"visible":true,"params":{"resource":{"ids":[406477],"type":"banner","dimensions":{"desktop":{"width":"1920.00","height":"720.00"},"mobile":{"width":"0.00","height":"0.00"}},"first_banner":{"id":406477,"link":null,"image":"\/\/images.yampi.me\/assets\/stores\/pajoli\/uploads\/banners\/642a0382d529f.png","mobile_image":null,"stopwatch":null}},"slider_delay":5,"layout":"full"}},{"section_alias":"collection","position":1,"order":2,"visible":true,"params":{"resource":{"ids":[194984],"type":"collection","dimensions":[],"first_banner":[]},"desktop_layout":"grid","mobile_products_per_line":"2","visible_products":9,"show_all_button":true}},{"section_alias":"banner_2","position":1,"order":3,"visible":false,"params":{"resource":{"ids":[],"type":"banner","dimensions":[],"first_banner":[]}}},{"section_alias":"collection","position":1,"order":4,"visible":false,"params":{"resource":{"ids":[],"type":"collection","dimensions":[],"first_banner":[]},"desktop_layout":"grid","mobile_products_per_line":"2","visible_products":10,"show_all_button":true}},{"section_alias":"banner_2","position":1,"order":5,"visible":false,"params":{"resource":{"ids":[],"type":"banner","dimensions":[],"first_banner":[]}}},{"section_alias":"collection","position":1,"order":6,"visible":false,"params":{"resource":{"ids":[],"type":"collection","dimensions":[],"first_banner":[]},"desktop_layout":"carousel","mobile_products_per_line":"2","visible_products":10,"show_all_button":true}},{"section_alias":"footer","position":2,"order":0,"visible":true,"params":{"background_color":"#000000","text_color":"#FFFFFF","newsletter_enabled":true,"newsletter_title":"Fique por dentro das novidades","description_enabled":true,"show_brand":true,"show_description":true,"categories_enabled":true,"categories_type":"all","show_pages":true,"support_enabled":true,"show_whatsapp":true,"show_phone":true,"show_email":true,"social_enabled":true,"show_facebook":true,"show_instagram":true,"show_youtube":true,"show_payment_icons":true,"show_security_label":true,"show_address":true,"show_business_information":false,"show_yampi_brand":false,"show_pinterest":true,"show_tiktok":true,"show_twitter":true}}]};
+    window.data = {};
+    window.Yampi = {
+        api_domain: 'https://api.dooki.com.br',
+        page: 'home',
+        cart_token: '96fa2510-d3e4-11ed-9641-215b977bf839',
+        env: 'production',
+        csrf_token: 'xVEdBbgGAFIGjWj9DzxyNuqYptEA09RswUuLJv5R',
+        session: {
+            utm_source: '',
+            utm_campaign: '',
+            utm_medium: '',
+            utm_term: '',
+            utm_content: '',
+            utm_name: '',
+            utm_email: '',
+            zipcode: '',
+            customer: {
+                name: '',
+                email: '',
+            },
+        },
+        mixpanel: {
+            key: '__4087a793328d188d3705be7bee640b9f__'
+        },
+        thumbor: {
+            enabled: true,
+            url: 'https://images.yampi.io',
+            default: {"fitIn":"fit-in","filters":["background_color(white)","upscale()"]}
+        },
+        sentry: {
+            enabled: false,
+            tracing: false,
+            dsn: '',
+        },
+        cache: {
+            js: 10,
+        },
+        icon_url: 'https://icons.yampi.me',
+    };
+</script>
+
+<link rel="stylesheet" href="https://cdn.yampi.io/rocket/css/global.css?id=9e18d6cca0aa79fd66cf" media="screen">
+<link rel="stylesheet" href="https://cdn.yampi.io/rocket/css/themes/rocket-home.css?id=b3c00e7bc8f13754edc6" media="screen">
+<link rel="stylesheet" href="https://cdn.yampi.io/rocket/css/themes/rocket-home-mobile.css?id=3744d90eb79bf934869f" media="screen and (max-width: 700px)">
+<link rel="stylesheet" href="https://cdn.yampi.io/rocket/css/themes/rocket.css?id=56c5d646b66499d8a16e" media="screen">
+<link rel="stylesheet" href="https://cdn.yampi.io/rocket/css/themes/rocket-mobile.css?id=bc1fcdbed2062098066a" media="screen and (max-width: 700px)">
+
+<style>
+    0
+</style>
+
+<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        
+        // Global GA Tracker
+        ga('create', 'UA-45745009-5', {name: 'bubbTracker'});
+        ga('bubbTracker.send', 'pageview');
+        ga('bubbTracker.require', 'ecommerce', 'ecommerce.js');
+    </script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "PAJOLI",
+        "logo": "https://images.yampi.me/assets/stores/pajoli/uploads/logo/642893c9d1593.png",
+        "alternateName": "PAJOLI",
+        "url": "https://www.pajoli.club",
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+5581991714737",
+                "contactType": "customer service, sales",
+                "contactOption": "TollFree",
+                "areaServed": "BR",
+                "description": "Atendimento Telefônico"
+            },
+            {
+                "@type": "PostalAddress",
+                "addressCountry": "Brasil",
+                "postalCode": "50680-000",
+                "streetAddress": "Rua Real da Torre, 159 - Madalena"
+            }
+        ]
+    }
+</script>
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "WebSite",
+        "name": "PAJOLI",
+        "url": "https://www.pajoli.club",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.pajoli.club/busca?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+</script>
+<script>
+        !function(e,a,n,t,s,c){e.ana||((t=e.ana=function(){t.process?t.process.apply(t,arguments):t.queue.push(arguments)}).queue=[],t.t=+new Date,(s=a.createElement(n)).async=1,s.src="https://cdn.yampi.io/ana/ana.min.js?t="+864e5*Math.ceil(new Date/864e5),(c=a.getElementsByTagName(n)[0]).parentNode.insertBefore(s,c))}(window,document,"script");
+    </script>
+
+    <script>
+        ana('init', 'rocket');
+
+        var anaParams = {
+            store_id: window.merchant.id,
+            store_profile: 'store_v2',
+            session_id: window.Yampi.cart_token
+        }
+
+                    var anaEvent = 'view-home';
+        
+        ana('event', anaEvent, anaParams);
+    </script>
+<style>
+    :root {
+        /* Fixed variables */
+        --container-max-width: 1200px;
+        --box-product-max-width: 275px;
+        --default-background-color: #F5F5F5;
+        --default-opacity: .8;
+        --modal-transition-time: .5s;
+
+        --error-color: #E50F38;
+        --light-error-color: #FEF7F7;
+        --light-error-color-rgb: 254, 247, 247;
+
+        --front-end-white: #FFF;
+        --front-end-f5f5f5: #f5f5f5;
+        --pink-regular: #fa085b;
+
+        --black-dark: #222222;
+        --black-dark-rgb: 34, 34, 34;
+        --error-color-rgb: 229, 15, 56;
+        --black-medium: #666666;
+        --black-light: #999999;
+        --black-lightest: #E5E5E5;
+        --green: #00AE31;
+        --white: #FFFFFF;
+
+        /* Dinamic variables */
+        --color-general-primary: #111111;
+        --color-general-secundary: #C48571;
+
+        --color-btn-primary-background: #111111;
+        --color-btn-primary-background-rgb: 17, 17, 17;
+        --color-btn-primary-background-outline: #111111;
+        --color-btn-primary-text: #FFFFFF;
+
+        --color-btn-secundary-background: #DDA3A3;
+        --color-btn-secundary-background-outline: #DDA3A3;
+        --color-btn-secundary-text: #FFFFFF;
+
+        --discount-tag-background: #F3F3F3;
+        --discount-tag-color: #000000;
+
+        --fonts-texts-family: Montserrat, sans-serif;
+        --fonts-texts-size: 15px;
+
+        --fonts-titles-family: Montserrat, sans-serif;
+        --fonts-titles-weight: 400;
+        --fonts-titles-uppercase: uppercase;
+
+        --fonts-buttons-uppercase: uppercase;
+
+        --theme-border-radius: 5px;
+
+        --label-radius: 5px;
+
+        /* Font size with base 14px */
+        --font-10: .7143rem;
+        --font-11: .7857rem;
+        --font-12: .85rem;
+        --font-13: .9285rem;
+        --font-14: 1rem;
+        --font-15: 1.07rem;
+        --font-16: 1.1428rem;
+        --font-17: 1.215rem;
+        --font-18: 1.286rem;
+        --font-20: 1.4285rem;
+        --font-21: 1.5rem;
+        --font-22: 1.5714rem;
+        --font-24: 1.7143rem;
+        --font-25: 1.7857rem;
+        --font-27: 1.9285rem;
+        --font-28: 2rem;
+        --font-30: 2.1428rem;
+        --font-48: 3.4286rem;
+
+        /* Font weights */
+        --font-regular: 400;
+        --font-medium: 500;
+        --font-bold: 700;
+        --font-black: 900;
+
+    }
+</style>
+
+    </head>
+<body class="pajoli  home ">
+
+    <div id="app">
+                                <section class="section-header -fixed" id="section-header">
+    <fixed-header
+        class="header header-0"
+        :fixed="true"
+        style="--header-font-color: #FFFFFF; --header-bg-color: #000000;"
+    >
+        
+                <div class="header-topbar">
+            <div class="container flex -between">
+                                <div class="header-topbar_contact flex">
+                    <span>Atendimento: </span>
+                    <span class="header-topbar-contact-whatsapp contact-whatsapp green">
+        <whatsapp 
+            class="phone-link_whatsapp flex -vcenter"
+            url="https://web.whatsapp.com/send?phone=5581991714737" 
+            number="81991714737"
+        ></whatsapp>
+    </span>
+
+    <span class="header-topbar-contact-phone contact-phone">
+        <a 
+            href="tel:81991714737" 
+            class="phone-link flex -vcenter"
+            target="_blank"
+            rel="noreferrer"
+        >
+            <i class="icon icon-phone"></i>
+            {{ '81991714737' | mask('## #########') }}
+        </a>
+    </span>
+                </div>
+                
+                                <a href="https://get.rastreio.net/" class="header-topbar_tracking flex -vcenter">
+                    <i class="icon icon-tracker"></i>
+                    Rastreie seu pedido
+                </a>
+                            </div>
+        </div>
+        
+        <div class="container">
+            <div class="header-content flex -between -center -drop-menu">
+                                <Side-Bar-Trigger active-class="active-menu" name="menu">
+                    <svg width="15" height="11" fill="none" viewBox="0 0 15 11" class="mobile -block">
+                        <path d="M1.51 9.927c0 .367-.311.688-.72.688-.408 0-.72-.321-.72-.688 0-.39.312-.688.72-.688.409 0 .72.298.72.688zm11.9-.688H4.185c-.408 0-.72.298-.72.688 0 .367.312.688.72.688h9.225c.408 0 .72-.321.72-.688 0-.39-.312-.688-.72-.688zM.79 4.655c-.408 0-.72.298-.72.688 0 .366.312.687.72.687.409 0 .72-.32.72-.687 0-.39-.311-.688-.72-.688zm12.62 0H4.185c-.408 0-.72.298-.72.688 0 .366.312.687.72.687h9.225c.408 0 .72-.32.72-.687 0-.39-.312-.688-.72-.688zM.79.07C.383.07.07.368.07.758c0 .367.312.688.72.688.409 0 .72-.321.72-.688C1.51.368 1.2.07.79.07zm3.395 1.376h9.225c.408 0 .72-.321.72-.688 0-.39-.312-.688-.72-.688H4.185c-.408 0-.72.298-.72.688 0 .367.312.688.72.688z" />
+                        <path clip-rule="evenodd" d="M0 .758C0 .326.347 0 .79 0c.444 0 .79.326.79.758 0 .407-.344.758-.79.758-.445 0-.79-.35-.79-.758zM.79.141C.418.14.14.41.14.758c0 .326.28.617.65.617.371 0 .65-.29.65-.617C1.44.41 1.163.141.79.141zm2.605.617c0-.432.346-.758.79-.758h9.225c.443 0 .79.326.79.758 0 .407-.345.758-.79.758H4.185c-.445 0-.79-.35-.79-.758zm.79-.617c-.372 0-.65.27-.65.617 0 .326.28.617.65.617h9.225c.37 0 .65-.29.65-.617 0-.348-.278-.617-.65-.617H4.185zM0 5.343c0-.432.347-.758.79-.758.444 0 .79.326.79.758 0 .407-.344.758-.79.758C.345 6.1 0 5.75 0 5.343zm.79-.618c-.372 0-.65.27-.65.618 0 .326.28.617.65.617.371 0 .65-.291.65-.617 0-.348-.277-.618-.65-.618zm2.605.618c0-.432.346-.758.79-.758h9.225c.443 0 .79.326.79.758 0 .407-.345.758-.79.758H4.185c-.445 0-.79-.351-.79-.758zm.79-.618c-.372 0-.65.27-.65.618 0 .326.28.617.65.617h9.225c.37 0 .65-.291.65-.617 0-.348-.278-.618-.65-.618H4.185zM.79 9.31c-.372 0-.65.27-.65.617 0 .327.28.618.65.618.371 0 .65-.291.65-.618 0-.348-.277-.617-.65-.617zM0 9.927c0-.431.347-.758.79-.758.444 0 .79.327.79.758 0 .407-.344.758-.79.758-.445 0-.79-.35-.79-.758zm3.395 0c0-.431.346-.758.79-.758h9.225c.443 0 .79.327.79.758 0 .407-.345.758-.79.758H4.185c-.445 0-.79-.35-.79-.758zm.79-.617c-.372 0-.65.27-.65.617 0 .327.28.618.65.618h9.225c.37 0 .65-.291.65-.618 0-.348-.278-.617-.65-.617H4.185z" />
+                    </svg>
+                </Side-Bar-Trigger>
+                                
+                <div class="logo ">
+                                            <a href="/" class="inline-block">
+                            <img
+                                src="https://images.yampi.me/assets/stores/pajoli/uploads/logo/642893c9d1593.png"
+                                alt=""
+                                width="auto"
+                                height="auto"
+                            />
+                        </a>
+                                    </div>
+
+                <div class="categories">
+                                        <div class="mobile -block -order-0">
+                        <ul>
+                            <li>
+                                <a href="https://get.rastreio.net/">
+                                    <i class="icon icon-tracker"></i>
+                                    Rastreie seu pedido
+                                </a>
+                            </li>
+                        </ul>
+
+                        <hr>
+                    </div>
+                    
+                                        <div class="mobile -block -order-2">
+
+                        <hr>
+
+                        <span class="header-topbar-contact-whatsapp contact-whatsapp green">
+        <whatsapp 
+            class="phone-link_whatsapp flex -vcenter"
+            url="https://web.whatsapp.com/send?phone=5581991714737" 
+            number="81991714737"
+        ></whatsapp>
+    </span>
+
+    <span class="header-topbar-contact-phone contact-phone">
+        <a 
+            href="tel:81991714737" 
+            class="phone-link flex -vcenter"
+            target="_blank"
+            rel="noreferrer"
+        >
+            <i class="icon icon-phone"></i>
+            {{ '81991714737' | mask('## #########') }}
+        </a>
+    </span>
+                    </div>
+                    
+                    <ul class="inline">
+                                                <li class="dropdown-holder category-dropdown-holder">
+                            <span class="padding block">
+                                <svg width="15" height="11" fill="none" viewBox="0 0 15 11">
+                                    <path d="M1.51 9.927c0 .367-.311.688-.72.688-.408 0-.72-.321-.72-.688 0-.39.312-.688.72-.688.409 0 .72.298.72.688zm11.9-.688H4.185c-.408 0-.72.298-.72.688 0 .367.312.688.72.688h9.225c.408 0 .72-.321.72-.688 0-.39-.312-.688-.72-.688zM.79 4.655c-.408 0-.72.298-.72.688 0 .366.312.687.72.687.409 0 .72-.32.72-.687 0-.39-.311-.688-.72-.688zm12.62 0H4.185c-.408 0-.72.298-.72.688 0 .366.312.687.72.687h9.225c.408 0 .72-.32.72-.687 0-.39-.312-.688-.72-.688zM.79.07C.383.07.07.368.07.758c0 .367.312.688.72.688.409 0 .72-.321.72-.688C1.51.368 1.2.07.79.07zm3.395 1.376h9.225c.408 0 .72-.321.72-.688 0-.39-.312-.688-.72-.688H4.185c-.408 0-.72.298-.72.688 0 .367.312.688.72.688z" />
+                                    <path clip-rule="evenodd" d="M0 .758C0 .326.347 0 .79 0c.444 0 .79.326.79.758 0 .407-.344.758-.79.758-.445 0-.79-.35-.79-.758zM.79.141C.418.14.14.41.14.758c0 .326.28.617.65.617.371 0 .65-.29.65-.617C1.44.41 1.163.141.79.141zm2.605.617c0-.432.346-.758.79-.758h9.225c.443 0 .79.326.79.758 0 .407-.345.758-.79.758H4.185c-.445 0-.79-.35-.79-.758zm.79-.617c-.372 0-.65.27-.65.617 0 .326.28.617.65.617h9.225c.37 0 .65-.29.65-.617 0-.348-.278-.617-.65-.617H4.185zM0 5.343c0-.432.347-.758.79-.758.444 0 .79.326.79.758 0 .407-.344.758-.79.758C.345 6.1 0 5.75 0 5.343zm.79-.618c-.372 0-.65.27-.65.618 0 .326.28.617.65.617.371 0 .65-.291.65-.617 0-.348-.277-.618-.65-.618zm2.605.618c0-.432.346-.758.79-.758h9.225c.443 0 .79.326.79.758 0 .407-.345.758-.79.758H4.185c-.445 0-.79-.351-.79-.758zm.79-.618c-.372 0-.65.27-.65.618 0 .326.28.617.65.617h9.225c.37 0 .65-.291.65-.617 0-.348-.278-.618-.65-.618H4.185zM.79 9.31c-.372 0-.65.27-.65.617 0 .327.28.618.65.618.371 0 .65-.291.65-.618 0-.348-.277-.617-.65-.617zM0 9.927c0-.431.347-.758.79-.758.444 0 .79.327.79.758 0 .407-.344.758-.79.758-.445 0-.79-.35-.79-.758zm3.395 0c0-.431.346-.758.79-.758h9.225c.443 0 .79.327.79.758 0 .407-.345.758-.79.758H4.185c-.445 0-.79-.35-.79-.758zm.79-.617c-.372 0-.65.27-.65.617 0 .327.28.618.65.618h9.225c.37 0 .65-.291.65-.618 0-.348-.278-.617-.65-.617H4.185z" />
+                                </svg>
+                                <span>Categorias</span>
+                            </span>
+
+                            <category-subcategory class="dropdown category-subcategory-menu">
+    <div class="holder-categories -is-loading">
+        <div class="mobile -block">
+            <div class="close-dropdown inline-block -ml">
+                Voltar
+            </div>
+
+            <div class="category-title">
+                Categorias
+            </div>
+        </div>
+
+        <ul>
+                            <li class="dropdown-holder item-category calcas">
+                    <a class="block" href="/calcas">
+                        Calças
+                    </a>
+
+                                    </li>
+                    </ul>
+    </div>
+</category-subcategory>                        </li>
+                        
+                        
+                                            </ul>
+                </div>
+
+                                <search-bar></search-bar>
+                
+                <div class="mini-cart-holder">
+                    <mini-cart 
+                        :cart-type="'side_cart'" 
+                        :show-cart-savings="false"
+                        :show-product-cart-savings="false"
+                        :empty-cart-helper-text="'Navegue pela loja e adicione produtos.'"
+                        :empty-cart-text-button="'Iniciar compra'"
+                        :empty-cart-link-button="'0'"
+                    /> 
+                </div>
+            </div>
+        </div>
+    </fixed-header>
+</section>                                <banners
+        class="main-banner main_banner-1"
+        section="main-banner"
+        :ids="[406477]"
+        :carousel="true"
+        :container="false"
+        :slider-delay="5"
+        :dimensions="{&quot;desktop&quot;:{&quot;width&quot;:&quot;1920.00&quot;,&quot;height&quot;:&quot;720.00&quot;},&quot;mobile&quot;:{&quot;width&quot;:&quot;0.00&quot;,&quot;height&quot;:&quot;0.00&quot;}}"
+        :first-banner="{&quot;id&quot;:406477,&quot;link&quot;:null,&quot;image&quot;:&quot;\/\/images.yampi.me\/assets\/stores\/pajoli\/uploads\/banners\/642a0382d529f.png&quot;,&quot;mobile_image&quot;:null,&quot;stopwatch&quot;:null}"
+    ></banners>
+                                <collection
+        class="collection collection-2"
+        :show-link="true"
+        :collection-id="194984"
+        :products-per-line="2"
+        :total-products="9"
+        desktop-layout="grid"
+    >
+        <div
+    class="box-product "
+    slot-scope="data"
+>   
+    <a
+        :href="data.product.url_path"
+        class="block -clean"
+    >
+        <div class="holder-image relative-tags">
+            <discount-tag
+                :value="data.product.prices.data.percent_discount"
+            ></discount-tag>
+
+            <div class="image-ratio">
+                                    <custom-image
+                        v-if="data.product.images"
+                        :src="data.product.images.data[0] ? data.product.images.data[0].url : 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'"
+                        :thumbor-enabled="data.product.images.data[0] ? true : false"
+                        :thumbor="{ resize: '275x275' }"
+                        :alt="data.product.name"
+                        class="-loading"
+                    ></custom-image>
+                
+            </div>
+
+                            <buy-button
+                    :product="data.product"
+                >
+                    <template slot="buy-button">
+                        <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.5831C2.44477e-08 12.3035 0.2267 12.0768 0.506349 12.0768L8.60794 12.0768C8.88758 12.0768 9.11429 12.3035 9.11429 12.5831C9.11429 12.8628 8.88758 13.0895 8.60794 13.0895L0.506349 13.0895C0.2267 13.0895 -2.44477e-08 12.8628 0 12.5831Z" fill="#222222"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.55714 7.85718C4.83679 7.85718 5.06349 8.08388 5.06349 8.36353L5.06349 16.4651C5.06349 16.7448 4.83679 16.9715 4.55714 16.9715C4.27749 16.9715 4.05079 16.7448 4.05079 16.4651L4.05079 8.36353C4.05079 8.08388 4.27749 7.85718 4.55714 7.85718Z" fill="#222222"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4395 17.3649C14.9667 17.3649 15.3941 16.9375 15.3941 16.4103C15.3941 15.8831 14.9667 15.4558 14.4395 15.4558C13.9123 15.4558 13.4849 15.8831 13.4849 16.4103C13.4849 16.9375 13.9123 17.3649 14.4395 17.3649ZM14.4395 18.5249C15.6074 18.5249 16.5541 17.5782 16.5541 16.4103C16.5541 15.2425 15.6074 14.2958 14.4395 14.2958C13.2717 14.2958 12.3249 15.2425 12.3249 16.4103C12.3249 17.5782 13.2717 18.5249 14.4395 18.5249Z" fill="#222222"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.3603 17.3649C20.8875 17.3649 21.3149 16.9375 21.3149 16.4103C21.3149 15.8831 20.8875 15.4558 20.3603 15.4558C19.8331 15.4558 19.4058 15.8831 19.4058 16.4103C19.4058 16.9375 19.8331 17.3649 20.3603 17.3649ZM20.3603 18.5249C21.5282 18.5249 22.4749 17.5782 22.4749 16.4103C22.4749 15.2425 21.5282 14.2958 20.3603 14.2958C19.1925 14.2958 18.2458 15.2425 18.2458 16.4103C18.2458 17.5782 19.1925 18.5249 20.3603 18.5249Z" fill="#222222"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.48242 4.74992C8.48242 4.4296 8.7421 4.16992 9.06242 4.16992H9.98229C10.5506 4.16992 11.0535 4.5377 11.2259 5.07924L11.862 7.07858C11.8946 7.07289 11.9282 7.06992 11.9624 7.06992H22.8961C23.7986 7.06992 24.4286 7.96397 24.1251 8.81384L23.1742 11.4765C22.7826 12.573 21.744 13.3049 20.5797 13.3049H14.6403C13.4406 13.3049 12.3788 12.5285 12.015 11.3852L10.1205 5.43096C10.1013 5.37079 10.0454 5.32992 9.98229 5.32992H9.06242C8.7421 5.32992 8.48242 5.07025 8.48242 4.74992ZM12.2283 8.22992L13.1204 11.0335C13.331 11.6954 13.9457 12.1449 14.6403 12.1449H20.5797C21.2537 12.1449 21.855 11.7212 22.0817 11.0864L23.0327 8.42369C23.0664 8.32926 22.9964 8.22992 22.8961 8.22992H12.2283Z" fill="#222222"/>
+                        </svg>
+                    </template>
+                </buy-button>
+            
+        </div>
+
+        <div class="holder-info">
+            <flags
+                :product="data.product"
+            ></flags>
+
+                            <average-rating
+                    :product="data.product"
+                    class=""
+                    :is-grid="true"
+                ></average-rating>
+            
+            
+            <div class="product-name ellipsis-multiline l2">
+                {{ data.product.name }}
+            </div>
+
+            <div class="product-prices">
+                <div class="flex -vcenter -wrap">
+                                            <span
+                            class="product-old-price old-price"
+                            v-if="data.product.prices.data.has_promotion"
+                        >
+                            {{ data.product.prices.data.price_sale_formated }}
+                        </span>
+                                        <span class="product-actual-price price">
+                        {{ data.product.prices.data.price_formated }}
+                    </span>
+                </div>
+
+                            </div>
+        </div>
+    </a>
+</div>
+    </collection>
+                                                                                <vue-section
+    class="
+        footer
+        
+        
+    "
+    style="
+        --footer-font-color: #FFFFFF;
+        --footer-bg-color: #000000;
+        --footer-opacity-color: rgba(255, 255, 255, 0.5);
+        --footer-hr-color: rgba(255, 255, 255, 0.1);
+    "
+    :delay="500"
+>
+        <div class="holder-newsletter container">
+        <div class="-title theme-title">
+            Fique por dentro das novidades
+        </div>
+
+        <newsletter></newsletter>
+    </div>
+
+    <div class="holder-footer footer-0">
+        <div class="container">
+            <div class="holder-footer-section section-1 flex -hcenter">
+                                    <div class="holder-footer-logo">
+                                                    <div class="logo">
+                                <img
+                                    src="https://images.yampi.me/assets/stores/pajoli/uploads/logo/642893c9d1593.png"
+                                    alt=""
+                                    width="auto"
+                                    height="auto"
+                                />
+                            </div>
+                        
+                                                    <div class="-description">
+                                PAJOLI
+                            </div>
+                                            </div>
+                
+                <div class="holder-footer-info flex">
+                                            <div class="-categories">
+                            <div class="-title">Categorias</div>
+                            <expandable title="Categorias">
+                                <ul>
+                                                                            <li><a href="/calcas">Calças</a></li>
+                                                                    </ul>
+                            </expandable>
+                        </div>
+                    
+                    
+                                            <div class="flex holder-contact">
+                            <div class="-contact">
+                                <div class="-title">Atendimento</div>
+                                <expandable title="Atendimento">
+                                    <ul>
+                                                                                    <li class="contact-whatsapp">
+                                                <whatsapp
+                                                    class="flex -vcenter"
+                                                    url="https://web.whatsapp.com/send?phone=5581991714737"
+                                                    number="81991714737"
+                                                ></whatsapp>
+                                            </li>
+                                        
+                                                                                    <li class="contact-phone">
+                                                <a
+                                                    class="flex -vcenter"
+                                                    href="tel:81991714737"
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
+                                                    <svg width="17" height="17" fill="none"><defs/><path d="M.514 6.16C.181 5.26-.06 4.342.013 3.368c.046-.6.272-1.113.711-1.533.478-.452.93-.926 1.4-1.384.612-.604 1.38-.6 1.993 0 .378.37.753.749 1.128 1.127.363.364.73.727 1.094 1.094.638.646.642 1.399.004 2.041-.46.46-.915.922-1.381 1.373-.122.118-.134.218-.069.367.306.734.75 1.388 1.247 2 1.002 1.23 2.134 2.324 3.484 3.169.29.18.608.313.91.478.157.084.26.057.386-.073.456-.47.922-.933 1.389-1.396.612-.604 1.377-.607 1.989 0 .75.742 1.495 1.488 2.237 2.237.623.627.62 1.395-.008 2.026-.424.428-.872.834-1.27 1.28-.58.65-1.315.865-2.149.819-1.216-.065-2.337-.47-3.419-.994a18.604 18.604 0 01-6.169-4.825C2.25 9.661 1.202 8.017.514 6.16z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M6.178 2.832c-.242-.244-.485-.486-.728-.728l-.365-.364-.001-.001C4.709 1.36 4.335.983 3.958.614 3.686.347 3.395.227 3.12.227s-.565.118-.837.386c-.187.183-.375.371-.564.561A37.66 37.66 0 01.88 2c-.396.379-.599.837-.641 1.386-.069.927.16 1.808.488 2.695.677 1.828 1.71 3.45 2.967 4.949a18.379 18.379 0 006.094 4.766c1.07.518 2.159.909 3.332.972.782.043 1.443-.156 1.968-.743.27-.304.568-.593.86-.877.142-.139.283-.276.418-.412.281-.283.406-.579.407-.856.002-.277-.12-.571-.399-.851a307.98 307.98 0 00-2.236-2.235c-.272-.27-.561-.39-.835-.39-.273.001-.563.121-.835.39-.467.463-.931.923-1.385 1.391a.586.586 0 01-.3.182.524.524 0 01-.356-.067h-.001a10.21 10.21 0 00-.35-.18l-.102-.05a5.825 5.825 0 01-.47-.255c-1.377-.862-2.527-1.974-3.54-3.219-.504-.62-.962-1.293-1.28-2.053l.001.001.208-.09-.21.087.002.002a.562.562 0 01-.051-.323.541.541 0 01.17-.296c.349-.337.69-.68 1.033-1.024l.345-.346c.288-.29.412-.583.411-.858 0-.276-.127-.572-.415-.864z"/></svg>
+                                                    {{ '81991714737' | mask('## #########') }}
+                                                </a>
+                                            </li>
+                                        
+                                                                                    <li class="contact-email">
+                                                <a class="flex -vcenter" href="mailto:usepajoli@outlook.com">
+                                                    usepajoli<wbr>@outlook<wbr>.com
+                                                </a>
+                                            </li>
+                                                                            </ul>
+                                </expandable>
+                            </div>
+                        </div>
+                    
+                                            <div class="-social-midia">
+                            <ul class="inline">
+                                                                    
+                                                                            <li class="social-midia -instagram">
+                                            <a
+                                                class="-clean"
+                                                href="https://www.instagram.com/usepajoli/"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <fa-icon :icon="['fab', 'instagram']"></fa-icon>
+                                                <span class="-invisible">instagram</span>
+                                            </a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                                    </div>
+            </div>
+
+                            <div class="holder-footer-section section-2">
+                                            <span class="holder-cards">
+                            <ul class="inline">
+                                                                    <li>
+                                        <img
+    v-lazyload
+    alt="amex" width="35" height="24"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    data-src="https://icons.yampi.me/svg/card-amex.svg"
+    width="auto"
+    height="auto"
+>
+                                    </li>
+                                                                    <li>
+                                        <img
+    v-lazyload
+    alt="visa" width="35" height="24"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    data-src="https://icons.yampi.me/svg/card-visa.svg"
+    width="auto"
+    height="auto"
+>
+                                    </li>
+                                                                    <li>
+                                        <img
+    v-lazyload
+    alt="diners" width="35" height="24"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    data-src="https://icons.yampi.me/svg/card-diners.svg"
+    width="auto"
+    height="auto"
+>
+                                    </li>
+                                                                    <li>
+                                        <img
+    v-lazyload
+    alt="mastercard" width="35" height="24"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    data-src="https://icons.yampi.me/svg/card-mastercard.svg"
+    width="auto"
+    height="auto"
+>
+                                    </li>
+                                                                    <li>
+                                        <img
+    v-lazyload
+    alt="discover" width="35" height="24"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    data-src="https://icons.yampi.me/svg/card-discover.svg"
+    width="auto"
+    height="auto"
+>
+                                    </li>
+                                                                    <li>
+                                        <img
+    v-lazyload
+    alt="aura" width="35" height="24"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    data-src="https://icons.yampi.me/svg/card-aura.svg"
+    width="auto"
+    height="auto"
+>
+                                    </li>
+                                                                    <li>
+                                        <img
+    v-lazyload
+    alt="hipercard" width="35" height="24"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    data-src="https://icons.yampi.me/svg/card-hipercard.svg"
+    width="auto"
+    height="auto"
+>
+                                    </li>
+                                                                    <li>
+                                        <img
+    v-lazyload
+    alt="elo" width="35" height="24"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    data-src="https://icons.yampi.me/svg/card-elo.svg"
+    width="auto"
+    height="auto"
+>
+                                    </li>
+                                                                    <li>
+                                        <img
+    v-lazyload
+    alt="billet" width="35" height="24"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    data-src="https://icons.yampi.me/svg/card-billet.svg"
+    width="auto"
+    height="auto"
+>
+                                    </li>
+                                                                    <li>
+                                        <img
+    v-lazyload
+    alt="hiper" width="35" height="24"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    data-src="https://icons.yampi.me/svg/card-hiper.svg"
+    width="auto"
+    height="auto"
+>
+                                    </li>
+                                                                    <li>
+                                        <img
+    v-lazyload
+    alt="pix" width="35" height="24"
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    data-src="https://icons.yampi.me/svg/card-pix.svg"
+    width="auto"
+    height="auto"
+>
+                                    </li>
+                                                            </ul>
+                        </span>
+                    
+                                            <i class="icon icon-security"></i>
+                                    </div>
+            
+            <div class="holder-footer-section section-3 flex -hcenter">
+                                    <div class="holder-store-address">
+                                                    <span>
+                                Rua Real da Torre
+                                159
+                                
+                            </span>
+
+                            <span class="divisor"> - </span>
+
+                            
+                            <span>Madalena</span>
+
+                            <span class="divisor"> - </span>
+
+                            <span>
+                                Recife
+                            </span>
+
+                                                    
+                                            </div>
+                
+                            </div>
+        </div>
+    </div>
+</vue-section>
+            
+    <smooth-scroll :display-at="300">
+        <template slot-scope="{ scroll }">
+            <div class="scroll-top" @click="scroll">
+                <i class="icon icon-scroll-top"></i>
+            </div>
+        </template>
+    </smooth-scroll>
+    
+    
+            <add-to-cart />
+        </div>
+
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-1173a7bb9742e987ab2","applicationID":"765085969","transactionName":"NlQEYUJSDBFUBkdZWQ8eJ1ZEWg0MGjlyQEY9eRJBQG8hDVsRQV9aDVQURmx7DQ9QJlxeQhNeCllVQSILWwFWSA==","queueTime":0,"applicationTime":461,"atts":"GhMHFwpIHx8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
